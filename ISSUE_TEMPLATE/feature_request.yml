@@ -1,0 +1,28 @@
+name: Solicitud de mejora
+description: Propón una nueva funcionalidad o mejora
+title: "[FEATURE]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema o necesidad
+      description: ¿Qué necesidad resuelve esta mejora?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solución propuesta
+      description: Describe la mejora que propones implementar.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impacto esperado
+      options: [Alto, Medio, Bajo]
+    validations:
+      required: true

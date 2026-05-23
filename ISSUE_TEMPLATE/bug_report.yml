@@ -1,0 +1,35 @@
+name: Reporte de error
+description: Reporta un problema encontrado en el proyecto
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción del problema
+      placeholder: Describe el error encontrado con detalle.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      placeholder: "1. Ir a...\n2. Hacer clic en...\n3. Ver error..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridad
+      options: [Alta, Media, Baja]
+    validations:
+      required: true

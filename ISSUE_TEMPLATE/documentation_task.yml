@@ -1,0 +1,30 @@
+name: Tarea de documentación
+description: Solicita una mejora en la documentación
+title: "[DOCS]: "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: section
+    attributes:
+      label: Sección a mejorar
+      description: Indica qué parte de la documentación necesita trabajo.
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Mejora propuesta
+      description: Explica qué añadir, corregir o aclarar.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: type
+    attributes:
+      label: Tipo de mejora
+      options:
+        - label: Corrección de error
+        - label: Información faltante
+        - label: Ejemplos adicionales
+        - label: Mejor redacción
